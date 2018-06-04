@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8"/>
+<link rel="stylesheet" href="form1.css">
+<script type="text/javascript" src="form1.js"></script>
+<title>formulaire</title>
+</head>
+
+<body>
+<form action="" method="get">
+	<label>mail : </label>
+	<input id="mail"  onfocus="donnees()" type="email" /><br/><br/>
+
+	<label>objet : </label>
+	<input id="object"   type="text" /><br/><br/>
+
+	<label>message : </label>
+	<textarea id="txt" type="text"  maxlength="4000" class="corp" />
+	</textarea><br/><br/>
+
+	<button type="reset" >reset</button>
+	<button type="submit"  id="bout">send</button>
+</form>
+</body>
+</html>

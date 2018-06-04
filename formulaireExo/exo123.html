@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<script>
+
+//ci-dessous on demande de saisir un nom pour choisir une figure
+//1:triangle 2:cercle 3:carre 4:rectangle
+var figure = prompt("entrez un nom de figure");
+
+//ci-dessous les fonction qui permettront de voir les different calcul a appeler dans les conditions
+function airetriangle(){
+    var base = Number(prompt("entrez une valeur de la figure triangle"));
+	var hauteur = Number(prompt("entrez une valeur de la figure triangle"));
+	return base * hauteur / 2 ;
+}
+
+function airecercle(){
+var rayon = Number(prompt("entrez une valeur de la figure cercle"));
+return Math.PI * (rayon * rayon);
+
+}
+
+function airecarre(){
+var cote = Number(prompt("entrez une valeur de la figure carre"));
+var x = cote * cote;
+return x ;
+
+}
+function airerectangle(){
+	var longueur = Number(prompt("entrez une valeur de la figure rectangle"));
+	var largeur = Number(prompt("entrez une valeur de la figure rectangle"));
+	var resultat = longueur * largeur;
+	return longueur * largeur;
+
+}
+
+if(figure == "triangle" ){
+//triangle
+	airetriangle();
+	alert("votre triangle fait" + airetriangle + " m2");
+}
+if(figure == "cercle"){
+//cercle
+	airecercle();
+	alert("votre cercle fait" + airecercle + " m2");
+}
+if(figure == "carre"){
+//cercle
+	airecarre();
+	alert("votre rectangle fait" + airecarre + " m2");
+}
+if(figure == "rectangle"){
+//cercle
+	airerectangle();
+	alert("votre rectangle fait" + airerectangle + " m2");
+}
+</script>
+</body>
+</html>
